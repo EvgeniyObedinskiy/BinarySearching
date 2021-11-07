@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+
 
 namespace ConsoleApp3
 {
@@ -12,6 +12,7 @@ namespace ConsoleApp3
             var arrLength = arr.Length;
             ///Начало поиска в массиве
             var arrStart = 0;
+            ///Цикл работает пока поиск не сузиться до значения искомого элемента.
             while (arrStart <= arrLength) 
             {
                 ///Середина массива.
@@ -36,8 +37,8 @@ namespace ConsoleApp3
         }
         static void Main(string[] args) 
         {
-            int[] list = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 123 };
-            string res = BinarySearch(list, 5);
+            int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 123 };
+            string res = BinarySearch(arr, 5);
             Console.WriteLine(res);
             Console.ReadLine();
 
